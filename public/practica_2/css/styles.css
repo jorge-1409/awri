@@ -1,0 +1,27 @@
+/* 
+    Document   : styles.css
+    Created on : 26/09/2013, 07:55:07 AM
+    Author     : atlas
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.italic { 
+    font-style: italic;
+}
+.comic_verde {
+    font-family: Comic Sans MS;
+    color: #0c0;
+}
+.arial_azul{
+    font-family: arial;
+    color:#00f;
+}
+.courier_red{
+    font-family: Courer New;
+    color: #f00;
+}
+.pix_64{
+    width: 60px;
+    height: 40px;
+}
