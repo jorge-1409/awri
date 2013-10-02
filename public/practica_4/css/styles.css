@@ -1,0 +1,29 @@
+#wrapper {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 980px;
+}
+
+#header {
+	background: yellow;
+}
+
+#side-a {
+	float: left;
+	width: 300px;
+        background: #2980b9;
+}
+
+
+
+#content { 
+	float: left;
+	width: 58%;
+}
+
+#footer {
+	clear: both;
+	background: #A2A2A2;
+}
