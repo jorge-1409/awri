@@ -1,0 +1,131 @@
+/* Se coloca fondo al body */
+body {
+    background : #e1e3e5;
+}
+/* se utiliza para centrar el contenido de la pagina
+*/
+
+#contenedor {
+    /* texto a la izquierda*/
+    text-align: left;
+    /* centra el div contenedor y todos los divs hijos */
+    margin: 0px auto;
+    /* 0 margen interna*/
+    padding: 0px;
+    /* 0 borde*/
+    border:0;
+    /* tamaño recomendado para resoluciones mayores a 1024*768*/
+    width: 980px;
+}
+
+#header {
+    /* fondo verde*/
+    background: #27AE60;
+    padding: 5px 20px;
+}
+/*
+clase padre para los divs left y right,
+*/
+#container{
+    /* fondo blanco*/
+    background-color: #fff;
+    /* overflow se utiliza para evitar que los divs internos con propiedad float,
+dejen de height=0 el div con id container */
+    overflow: hidden;
+}
+
+#container .left {
+    /* flotando a la izquierda */
+    float: left;
+    /* sidebar left con 25% de #container y propiedad IMPORTANTE!!! */
+    width: 25% !important;
+
+}
+/*
+Titulo del sidebar left (opciones)
+*/
+#container .left .title{
+    /* color de fuente negro*/
+    color: #000;
+    /* margen interno */
+    padding:10px 5px;
+    /* negrita*/
+    font-weight: bold;
+    /* tamaño letra*/
+    font-size: 18px;
+}
+
+#container .right { 
+    /* flotando a la derecha*/
+    float: left;
+    /* sidebar RIGHT con 65% de #container y propiedad IMPORTANTE!!! */
+    width: 65% !important; 
+    /* margen interna*/
+    padding: 0px 10px;
+}
+
+#footer {
+    /* se hace clear tanto left como right*/
+    clear: both;
+    /* fondo*/
+    background: #27AE60;
+    /* margen interna*/
+    padding:20px;
+}
+.logo{
+    /* tamaño letra*/
+    font-size: 40px;
+    /* negrita */
+    font-weight: bold;
+    /* se convierte elemento de linea en elemento de bloque */
+    display: block;
+}
+.leyenda {
+    /* margen de 30px izquierda*/
+    margin-left: 30px;
+}
+
+
+/* ------ MENU ------ */
+
+/* Etiqueta UL*/
+.left .menu {
+    /* se quita el estilo de listas circular*/
+    list-style: none;
+    /* margen 0*/
+    margin:0;
+    /* margen interna de 5px*/
+    padding: 5px;
+}
+/* se aplica cuando se encuentra en una determinada sección*/
+.left .menu li.active {
+    /* el borde inferior de 2pixeles solido y color verde  */
+    border-bottom: 2px #27AE60 solid;
+}
+/* cuando la etiqueta a es un link (cuenta con atributo href) o ya ha sido visitado */
+.left .menu li a:link, .left .menu li a:visited  {
+    /* color azul*/
+    color: blue; 
+    /* se quita decoracion*/
+    text-decoration: none;
+}
+/* cuando se encuentra el mouse encima del link*/
+.left .menu li a:hover{
+    /* color negro*/
+    color: #000;
+}
+/* justifica los parrafos con esta clase*/
+p.justificado{
+    /* justicia el texto */
+    text-align: justify;
+}
+
+.multi_column {
+    overflow: hidden;
+}
+.multi_column .left {
+    float:left;
+}
+.multi_column .right{
+    float: right;
+}
